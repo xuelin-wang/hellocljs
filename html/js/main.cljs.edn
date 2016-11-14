@@ -1,0 +1,2 @@
+{:require [hellocljs.core]
+ :compiler-options {:asset-path "js/main.out"}}

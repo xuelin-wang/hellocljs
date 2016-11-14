@@ -22,3 +22,16 @@
          '[adzerk.boot-cljs-repl :refer [cljs-repl start-repl]]
          '[cemerick.piggieback]
          )
+
+(deftask dev
+  "Launch Immediate Feedback Development Environment"
+  []
+  (comp
+   (serve :dir "target")
+   (watch)
+   (reload)
+   (cljs-repl)
+   (cljs)
+   (target :dir #{"target"})
+   )
+  )

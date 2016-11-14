@@ -1,3 +1,5 @@
 (start-repl)
 (js/alert "Hello, repl")
 :cljs/quit
+(start-repl)
+:cljs/quit
